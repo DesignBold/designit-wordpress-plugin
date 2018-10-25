@@ -6,26 +6,6 @@
  *
  * Copyright (c) DesignBold
  */
-// var uploadImage = function(){
-// 	var url = 'http://10.0.0.61:8080/wordpress/wp-admin/media-upload.php?chromeless=1&post_id=81&tab=dbsdk_grabfromurl';
-// 	var params = 'dbsdk_grabfrom_url=https://download.designbold.com/2018-10-25/23c44a59bfea6640c750f6e2c0c65fa7ee7992d7/27A8GR2DZa.jpg?response_name=Untitled%20Design.jpg&Expires=1540523912&Signature=DrFbYcJL-bD4NrlKikaMm20BE43JbAKH9zdYJ~f7-phCG2QSGrqLcVzlsznSyrY0jPGEkc5TeGE3jBPQfiE04HnevMrYVaAj7P~c5nhhOuD7rH8F6WBQ2J7ONDS8AhK5SxxFiB~gX1g-mvSn9VlLBXl4s5z6eLfrAtlQT8lu-7RH-gAr86HXS9hJiv5DTZrVReT7MU3DgRWR84MsR3h-rKqSyfwwE2Mbnykvpb45Etfz~VJiP3Md9~pSqZlelrW6w23rae1DxXiJAYhfQTMLFaYckyJsrZ9n~dqjw-TCaK1uC9sQAkXngvpBniq02mA~LIDivo4YVh3EHu2WW7xYSw__&Key-Pair-Id=APKAILC7V3LQADEA7BYA&dbsdk_file_name=test8'
-
-// 	var xhr = new XMLHttpRequest();
-// 	xhr.open('POST' , url, true);
-
-// 	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-
-// 	xhr.onreadystatechange = function() {
-// 	    if(this.readyState == XMLHttpRequest.DONE && this.status == 200) {
-// 	        var result = JSON.parse(this.responseText);
-// 	        tinyMCE.activeEditor.selection.setContent('<img src="' + result.image_info.url + '" alt="" class="img-responsive">');
-// 	    	DBSDK.$('#DBSDK_notification').style.display = 'none';
-// 	    }
-// 	}
-// 	xhr.send(params);
-
-// 	DBSDK.$('#DBSDK_notification').style.display = 'block';
-// }
 
 window.DBSDK_Cfg = {
     export_mode : ['publish'],
