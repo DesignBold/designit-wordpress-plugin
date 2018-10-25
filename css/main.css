@@ -522,3 +522,48 @@
     width: 300px;
     font-weight: 500;
 }
+
+#dbsdk_modal_notification {
+    padding: 0;
+    margin: 0;
+    background-color: rgba(19, 18, 18, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999999;
+    -moz-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    transition: all ease .3s;
+    display: none; 
+}
+
+#modal_notification {
+    position: absolute;
+    padding: 50px 20px 20px 20px;
+    width: 600px;
+    height: 300px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    margin: auto;
+    z-index: 9999;
+}
+
+#modal_notification .db-loading {
+    right: 0;
+    background-color: initial;
+}
+#modal_notification .db-loading>p{
+    position: absolute;
+    font-size: 20px;
+    color: #FFF;
+    text-align: center;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+}
