@@ -787,9 +787,8 @@ window.DBSDK = {
                 }
                 iframe.style.display = 'block';
                 DBSDK.$('.db-overlay[data-id="' + uuid + '"] .db-loading')[0].style.display = 'none';
-                //source_frame = window.document.getElementById('db-design-frame-'+uuid);
-                console.log('2 - ' + iframe);
             };
+            source_frame = iframe;
             DBSDK.unbindEventHandler(iframe, 'load', iframeOnLoad, true);
             DBSDK.bindEventHandler(iframe, 'load', iframeOnLoad, true);
             var overlay = '<div class="db-overlay animated fadeIn" data-id="' + uuid + '" style="display: block;">'
@@ -802,7 +801,6 @@ window.DBSDK = {
             + '</div>';
             doc.body.insertAdjacentHTML('beforeend', overlay);
             DBSDK.$('.db-overlay[data-id="' + uuid + '"] .db-lightbox')[0].appendChild(iframe);
-            source_frame = window.document.getElementById('db-design-frame-'+uuid);
             DBSDK.bindEventHandler(DBSDK.$('.db-overlay[data-id="' + uuid + '"] .db-close-lightbox')[0], 'click', function (e) {
                 e.currentTarget.parentNode.style.display = 'none';
                 window.parent.postMessage({"action":""})
@@ -827,7 +825,7 @@ window.DBSDK = {
         + '<span class="db-close-lightbox">x</span>'
         + '</div>';
         DBSDK.$('.db-overlay')[0].insertAdjacentHTML('beforeend', lightbox);
-
+        source_frame = iframe;
         var iframeOnLoad = function () {
             if (iframe.removeEventListener) {
                 iframe.removeEventListener('load', null, true);
@@ -837,7 +835,6 @@ window.DBSDK = {
             }
             iframe.style.display = 'block';
             DBSDK.$('.db-overlay .db-lightbox[data-id="' + uuid + '"] .db-loading')[0].style.display = 'none';
-            source_frame = window.document.getElementById('db-design-frame-' + uuid);
         };
 
         DBSDK.unbindEventHandler(iframe, 'load', iframeOnLoad, true);
@@ -1269,7 +1266,7 @@ window.DBSDK = {
     }
 
     DBSDK.justLayout = function(){
-
+        
     }
 
     DBSDK.getAttribule = function(e){
