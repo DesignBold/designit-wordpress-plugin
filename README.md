@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Designbold designit button intergration for Wordpress use TinyMCE editor
 
 Designit a button allow designing image on Wordpress, written completely in Javascript.
@@ -14,3 +15,6 @@ In order to start developing CKEditor 5 you will require:
 
 Node.js 6.9.0+
 npm 4+ (note: some npm 5+ versions were known to cause problems, especially with deduplicating packages; upgrade npm when in doubt)
+=======
+# designit-wordpress-plugin
+>>>>>>> 93e37553ee7359e5edc8e8e5c82c15d1e0d2b3cd
