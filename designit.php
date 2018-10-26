@@ -3,7 +3,7 @@
 Plugin Name: Designit
 Plugin URI: https://www.designbold.com/collection/create-new
 Description: Desingbold designit build plugin allow designning image online
-Version: 1.1.0
+Version: 1.0.0
 Author: Designit
 Author URI: https://www.designbold.com/
 License: GPLv2 or later

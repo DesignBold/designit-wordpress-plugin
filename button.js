@@ -523,9 +523,13 @@ window.DBSDK = {
 
         xhr.onreadystatechange = function() {
             if(this.readyState == XMLHttpRequest.DONE && this.status == 200) {
-                var result = JSON.parse(this.responseText);
-                tinyMCE.activeEditor.selection.setContent('<img src="' + result.image_info.url + '" alt="" class="img-responsive">');
-
+                var rich = (typeof tinyMCE != "undefined") && tinyMCE.activeEditor && !tinyMCE.activeEditor.isHidden();
+                
+                if( rich ){
+                    var result = JSON.parse(this.responseText);
+                    tinyMCE.activeEditor.selection.setContent('<img src="' + result.image_info.url + '" alt="" class="img-responsive">');
+                }
+                
                 // Hidden notification 
                 DBSDK.$('#dbsdk_modal_notification').style.display = 'none';
             }
@@ -1265,7 +1269,7 @@ window.DBSDK = {
     }
 
     DBSDK.justLayout = function(){
-        
+
     }
 
     DBSDK.getAttribule = function(e){
