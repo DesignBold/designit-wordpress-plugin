@@ -8,7 +8,7 @@
  */
 
  window.DBSDK_Cfg = {
-    export_mode : ['publish'],
+    export_mode : ['publish', 'download'],
     export_callback: function (resultUrl, document_id, options) {
         // do something with design image URL, which is only accessible for 24 hours
         var post_id = DBSDK.$('.db-overlay .fix-favorite')[0].getAttribute('data-id');
