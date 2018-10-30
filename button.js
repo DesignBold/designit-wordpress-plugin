@@ -777,7 +777,6 @@ window.DBSDK = {
             iframe.src = designit_uri;
             iframe.name = 'db-design-frame-' + uuid;
             iframe.id = 'db-design-frame-' + uuid;
-            console.log('1 - ' + iframe);
             var iframeOnLoad = function () {
                 if (iframe.removeEventListener) {
                     iframe.removeEventListener('load', null, true);
