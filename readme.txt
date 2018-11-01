@@ -23,11 +23,11 @@ Can you clone from github with url https://github.com/designboldgit/designit-wor
 
 == Screenshots ==
 
-1. After install plugin success one button added into media button. This screen shot description corresponds to screenshot-1.png. 
+1. After install plugin success one button added into media button. This screen shot description corresponds to `assets/images/screenshot-1.png`. 
 
-2. When click button plugin will display same screenshot-2.jpg
+2. When click button plugin will display same `assets/images/screenshot-2.jpg`
 
-3. Choose a catalog that will will display same screenshot-3.jpg
+3. Choose a catalog that will will display same `assets/images/screenshot-3.jpg`
 
 4. Drag a image into frames, then click button publish to download image to media library and insert image into TinyMCE editor.
 
