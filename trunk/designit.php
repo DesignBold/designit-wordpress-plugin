@@ -31,8 +31,8 @@ if(!class_exists('Designit')) {
 		function __construct() {
 			global $post;
 			include_once('api.php');
-			wp_enqueue_style( 'style', plugin_dir_url(__FILE__) . '/assets/css/main.css', false, '1.1', 'all' );
-			wp_enqueue_script( 'designTool', plugin_dir_url(__FILE__) . '/trunk/button.js', array ( 'jquery' ), 1.1, true);
+			wp_enqueue_style( 'style', plugin_dir_url(__FILE__) . '/main.css', false, '1.1', 'all' );
+			wp_enqueue_script( 'designTool', plugin_dir_url(__FILE__) . '/button.js', array ( 'jquery' ), 1.1, true);
 			wp_localize_script('designTool', 'WPURLS', array( 'siteurl' => get_option('siteurl') )); 
 			add_action( 'media_buttons', array($this, 'dbsdk_createButton'));
 		}
@@ -40,7 +40,7 @@ if(!class_exists('Designit')) {
 		function dbsdk_createButton(){
 			global $post;
 			$output = '';
-			$icon = plugin_dir_url(__FILE__) . '/assets/images/logo_b.svg';
+			$icon = plugin_dir_url(__FILE__) . '/assets/icon.svg';
 
 			$img = '<span class="wp-media-buttons-icon" style="background-image: url(' . $icon . '); width: 16px; height: 16px; margin-top: 1px;"></span>';
 
