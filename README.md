@@ -1,12 +1,12 @@
-# Designbold designit button intergration for Wordpress use TinyMCE editor
+# DesignIt Wordpress plugin by DesignBold is build to edit images right. The plugin intergration for Wordpress use TinyMCE editor
 
-Designit a button allow designing image on Wordpress, written completely in Javascript.
+DesignIt Wordpress plugin by [DesignBold](https://designbold.com) is build to edit images right when you see them. It can be integration into TinyMCE editor. 
 
 For more information, check out the [proposal repo](https://github.com/designboldgit/designit-wordpress-plugin).
 
-## Introduce
+## Overview
 
-Plugin use for Wordpress use TinyMCE editor. If your Wordpress not use TinyMCE then then plugin not insert image to editor, but it still download in media library of Wordpress.
+Designit Wordpress plugin by [DesignBold](https://designbold.com) is built to edit images right when you see them. The design tools from [DesignBold](https://designbold.com) include all the options that you probably would need: Text, Filters, Crops, Grids, etc. The designed image is server-based rendered and saved into your library. It can be integrated into TinyMCE editor.
 
 ## Install
 
