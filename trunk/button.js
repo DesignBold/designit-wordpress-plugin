@@ -11,6 +11,7 @@
     export_mode : ['publish', 'download'],
     export_callback: function (resultUrl, document_id, options) {
         // do something with design image URL, which is only accessible for 24 hours
+        resultUrl = encodeURIComponent(resultUrl);
         var post_id = DBSDK.$('.db-overlay .fix-favorite')[0].getAttribute('data-id');
         var url = WPURLS.siteurl + "/wp-admin/media-upload.php?chromeless=1&post_id=" + post_id + "&tab=dbsdk_grabfromurl";
 
@@ -1123,6 +1124,7 @@ window.DBSDK = {
                 mainDiv.style.height = '100%';
                 mainDiv.name = 'db-design-frame-favorite';
                 mainDiv.id = 'db-design-frame-favorite';
+                source_frame = mainDiv;
 
                 var mainDivOnLoad = function () {
                     if (mainDiv.removeEventListener) {

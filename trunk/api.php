@@ -39,7 +39,7 @@ function dbsdk_fileType($fileType = NULL){
 function dbsdk_HandleUpload() {
     $flag = true;
     $post_id = $_REQUEST['post_id'] ? (int)$_REQUEST['post_id'] : 0;
-    $dbsdk_grabfrom_url = sanitize_text_field($_POST['dbsdk_grabfrom_url']);
+    $dbsdk_grabfrom_url = esc_url_raw($_POST['dbsdk_grabfrom_url']);
     $dbsdk_file_name = sanitize_text_field($_POST['dbsdk_file_name']);
 
     if ( isset( $dbsdk_grabfrom_url ) && $dbsdk_grabfrom_url != '' && $dbsdk_file_name != '' && get_post_status($post_id)) {

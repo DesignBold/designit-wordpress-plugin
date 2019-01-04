@@ -3,8 +3,8 @@
 Plugin Name: Designit
 Plugin URI: https://www.designbold.com/collection/create-new
 Description: Desingbold designit build plugin allow designning image online
-Version: 1.0.0
-Author: Designit
+Version: 1.0.2
+Author: DesignBold
 Author URI: https://www.designbold.com/
 License: GPLv2 or later
 */
@@ -25,22 +25,28 @@ along with {Designit}. If not, see {Plugin URI}.
 */
 
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
-
 if(!class_exists('Designit')) {
 	class Designit {
 		function __construct() {
 			global $post;
 			include_once('api.php');
-			wp_enqueue_style( 'style', plugin_dir_url(__FILE__) . '/main.css', false, '1.1', 'all' );
-			wp_enqueue_script( 'designTool', plugin_dir_url(__FILE__) . '/button.js', array ( 'jquery' ), 1.1, true);
-			wp_localize_script('designTool', 'WPURLS', array( 'siteurl' => get_option('siteurl') )); 
-			add_action( 'media_buttons', array($this, 'dbsdk_createButton'));
 		}
 
-		function dbsdk_createButton(){
+		public function init(){
+			add_action( 'admin_enqueue_scripts', array( $this, 'dbsdk_namespace_scripts_styles' ) );
+			add_action( 'media_buttons', array( $this, 'dbsdk_createButton' ));
+		}
+
+		public function dbsdk_namespace_scripts_styles(){
+			wp_enqueue_style( 'style', plugin_dir_url(__FILE__) . 'main.css' );
+			wp_enqueue_script( 'designTool', plugin_dir_url(__FILE__) . 'button.js');
+			wp_localize_script('designTool', 'WPURLS', array( 'siteurl' => get_option('siteurl') )); 
+		}
+
+		public function dbsdk_createButton(){
 			global $post;
 			$output = '';
-			$icon = plugin_dir_url(__FILE__) . '/assets/icon.svg';
+			$icon = plugin_dir_url(__FILE__) . 'assets/icon.svg';
 
 			$img = '<span class="wp-media-buttons-icon" style="background-image: url(' . $icon . '); width: 16px; height: 16px; margin-top: 1px;"></span>';
 
@@ -51,3 +57,4 @@ if(!class_exists('Designit')) {
 	}
 }
 $dbii = new Designit();
+$dbii->init();
