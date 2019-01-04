@@ -14,9 +14,9 @@ Plugins that get data from servers https://designbold.com through API https://ap
 
 For install plugin :
 
-Can you clone from github with url https://github.com/designboldgit/designit-wordpress-plugin. Then
+Can you clone from github with url `https://github.com/DesignBold/designit-wordpress-plugin`. Then
 
-1. Upload the plugin files to the `/wp-content/plugins/Designit` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
 
 2. Activate the plugin through the 'Plugins' screen in WordPress
 

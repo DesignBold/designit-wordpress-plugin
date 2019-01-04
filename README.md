@@ -2,7 +2,7 @@
 
 DesignIt Wordpress plugin by [DesignBold](https://designbold.com) is build to edit images right when you see them. It can be integration into TinyMCE editor. 
 
-For more information, check out the [proposal repo](https://github.com/designboldgit/designit-wordpress-plugin).
+For more information, check out the [proposal repo](https://github.com/DesignBold/designit-wordpress-plugin).
 
 ## Overview
 
@@ -12,7 +12,7 @@ Designit Wordpress plugin by [DesignBold](https://designbold.com) is built to ed
 
 This section describes how to install the plugin and get it working.
 
-1 Clone this responsitory, Upload the plugin files to the `/wp-content/plugins/designit` directory, or install the plugin through the WordPress plugins screen directly.
+1 Clone this responsitory, Upload the plugin files to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
 
 2 Activate the plugin through the 'Plugins' screen in WordPress
 
@@ -25,4 +25,4 @@ This section describes how to install the plugin and get it working.
 
 #### 1.0.0
 
-- [X] Designbold designit button intergration for Wordpress use TinyMCE editor
+- [X] Designbold button intergration for Wordpress use TinyMCE editor
