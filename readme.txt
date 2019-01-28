@@ -1,6 +1,6 @@
 === Plugin Name ===
 Plugin Name: Designit
-Requires PHP: 5.6.38
+Requires PHP: 5.6.38 and Wordpress version 4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -9,6 +9,8 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 DesignIt Wordpress plugin by DesignBoldis build to edit images right when you see them. It can be integration into TinyMCE editor. If you not use TinyMCE in Wordpress then plugin will be download image into Wordpress media.
 
 Plugins that get data from servers https://designbold.com through API https://api.designbold.com
+
+Now, if you are using Wordpress version 5 then refer `https://github.com/DesignBold/designit-wordpress5-plugin` for detail.
 
 == Installation ==
 

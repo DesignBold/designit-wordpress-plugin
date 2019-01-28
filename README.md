@@ -10,6 +10,8 @@ Designit Wordpress plugin by [DesignBold](https://designbold.com) is built to ed
 
 ## Install
 
+Now, if you are using Wordpress version 5 then refer [Plugin for WP version 5](https://github.com/DesignBold/designit-wordpress5-plugin) for detail.
+
 This section describes how to install the plugin and get it working.
 
 1 Clone this responsitory, Upload the plugin files to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
